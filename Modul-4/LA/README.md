@@ -1,3 +1,4 @@
+<img width="633" height="505" alt="Topologi TUMOD 4" src="https://github.com/user-attachments/assets/1e23d046-b054-454c-8e48-93e9bbc7c023" />
 # LAPORAN AKHIR MODUL 4
 Berikut adalah laporan akhir pada modul 4 Firewall and NET
 # Topologi
