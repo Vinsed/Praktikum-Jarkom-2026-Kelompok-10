@@ -132,8 +132,7 @@ sudo systemctl restart nginx
 ![Konfigurasi Ubuntu](images/konfigurasi_ubuntu.png)
 (Screenshot: Status service Nginx dan konfigurasi IP Ubuntu Server)
 
-### E. Konfi<img width="1401" height="776" alt="1" src="https://github.com/user-attachments/assets/82e711b0-7728-4459-bd54-847c5a59b26e" />
-gurasi Client (Tinycore Linux)
+### E. Konfigurasi Client (Tinycore Linux)
 Akses *Control Panel > Network* pada masing-masing VM Tinycore dan atur sesuai tabel IP.
 * *LAN Client:* IP 192.168.10.10, Mask 255.255.255.0, Gateway 192.168.10.1, DNS 8.8.8.8
 * *WAN Client:* IP 172.16.100.10, Mask 255.255.255.0, Gateway 172.16.100.1, DNS 8.8.8.8
@@ -142,7 +141,6 @@ Akses *Control Panel > Network* pada masing-masing VM Tinycore dan atur sesuai t
 (Screenshot: Konfigurasi IP pada GUI Network Tinycore)
 
 ---
-
 ## 4. Hasil Pengujian
 
 1. *Pengujian Client LAN ke Gateway Cisco* (Ping ke 192.168.10.1)
