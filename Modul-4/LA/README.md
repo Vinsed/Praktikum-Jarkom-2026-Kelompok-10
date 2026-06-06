@@ -4,8 +4,7 @@ Berikut adalah laporan akhir pada modul 4 Firewall and NET
 # Topologi
 Topologi jaringan pada praktikum ini mengimplementasikan segmentasi jaringan yang memisahkan antara jaringan internal (LAN), zona demiliterisasi (DMZ), dan jaringan eksternal (WAN/Internet). 
 
-![Topologi Jaringan Kelompok]<img width="633" height="505" alt="Topologi TUMOD 4" src="https://github.com/user-attachments/assets/1e23d046-b054-454c-8e48-93e9bbc7c023" />
-(Catatan: Ganti tautan gambar di atas dengan screenshot topologi jaringan dari workspace PNETLab kelompok Anda)
+src="https://github.com/user-attachments/assets/1e23d046-b054-454c-8e48-93e9bbc7c023" />
 
 *Keterangan Segmentasi:*
 * *Jaringan Lab / Internet:* Sumber koneksi luar melalui DHCP.
@@ -52,12 +51,9 @@ bash
 /ip route add dst-address=192.168.10.0/24 gateway=10.10.10.2
 /ip route add dst-address=192.168.20.0/24 gateway=10.10.10.2
 
-
-![Konfigurasi MikroTik](/Dokumentasi Mikrotik IP.jpeg)
-![Konfigurasi MikroTik](/Dokumentasi Mikrotik NAT.jpeg)
-![Konfigurasi MikroTik](/Dokumentasi Mikrotik IP.jpeg)
-(Screenshot: Konfigurasi IP, Route, dan NAT pada MikroTik)
-
+<img width="980" height="604" alt="Dokumentasi Miktrotik IP" src="https://github.com/user-attachments/assets/13c3f1cf-22dc-495f-80f4-0efda76866fb" />
+<img width="983" height="597" alt="Dokumentasi Miktrotik NAT" src="https://github.com/user-attachments/assets/55143cfe-9eb4-48ea-9f12-6b74dde03497" />
+<img width="976" height="604" alt="Dokumentasi Fortinet IP" src="https://github.com/user-attachments/assets/2f770821-db43-46ba-b1e9-80fb2dc7258b" />
 ### B. Konfigurasi FortiGate
 *1. Setup IP Address Interface*
 bash
@@ -98,11 +94,10 @@ Konfigurasi ini disarankan menggunakan GUI FortiGate:
 * *Policy LAN_to_DMZ:* Source LAN, Destination DMZ, Action ACCEPT, NAT OFF.
 * *Policy WAN_to_DMZ_HTTP:* Source WAN, Destination VIP_DMZ, Action ACCEPT, NAT OFF.
 
-![Konfigurasi FortiGate](/Dokumentasi Fortinet IP.jpeg)
-![Konfigurasi FortiGate](/Dokumentasi Fortinet Routing.jpeg)
-![Konfigurasi FortiGate](/Dokumentasi Fortinet Policy 1.jpeg)
-![Konfigurasi FortiGate](/Dokumentasi Fortinet Policy 2.jpeg)
-(Screenshot: Konfigurasi antarmuka, tabel routing, dan Firewall Policy FortiGate)
+<img width="976" height="604" alt="Dokumentasi Fortinet IP" src="https://github.com/user-attachments/assets/e37c78d1-80e3-4324-bda3-7f0b7ab07bef" />
+<img width="977" height="598" alt="Dokumentasi Fortinet Routing" src="https://github.com/user-attachments/assets/913b0423-1b40-460c-89a1-8d39df125251" />
+<img width="986" height="464" alt="Dokumentasi Fortinet Policy 1" src="https://github.com/user-attachments/assets/97a0d767-1d4b-4d09-8f00-00b87b7eb4d7" />
+<img width="978" height="598" alt="Dokumentasi Fortinet Policy 2" src="https://github.com/user-attachments/assets/a32c328f-1066-4f2e-b876-6cbc8402411d" />
 
 ### C. Konfigurasi Cisco Router
 *1. Setup IP Address & Routing*
@@ -120,10 +115,7 @@ interface GigabitEthernet0/1
 ip route 0.0.0.0 0.0.0.0 10.20.20.1
 copy running-config startup-config
 
-
-![Konfigurasi Cisco](/Dokumentasi IP & Routing Cisco.jpeg)
-(Screenshot: Hasil perintah show ip interface brief dan show ip route pada Cisco)
-
+<img width="978" height="599" alt="Dokumentasi IP   Routing Cisco" src="https://github.com/user-attachments/assets/5f36ff33-37db-4271-bd2f-5f3b92ce43a0" />
 ### D. Konfigurasi Ubuntu Server DMZ
 *1. Setup IP dan Web Server*
 Konfigurasi IP statis pada netplan Ubuntu (mengarah ke 192.168.20.10/24 dengan gateway 192.168.20.1). Selanjutnya, instal dan ubah halaman utama Nginx:
@@ -134,10 +126,7 @@ sudo nano /var/www/html/index.nginx-debian.html
 sudo systemctl enable nginx
 sudo systemctl restart nginx
 
-
-![Konfigurasi Ubuntu](/Dokumentasi Ubuntu IP & nginx DMZ.jpeg)
-(Screenshot: Status service Nginx dan konfigurasi IP Ubuntu Server)
-
+<img width="978" height="599" alt="Dokumentasi Ubuntu IP   nginx DMZ" src="https://github.com/user-attachments/assets/60431246-255e-48fc-b2e7-2311f3889203" />
 ---
 ## 4. Hasil Pengujian
 
