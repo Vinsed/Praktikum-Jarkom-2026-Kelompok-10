@@ -132,7 +132,8 @@ sudo systemctl restart nginx
 ![Konfigurasi Ubuntu](images/konfigurasi_ubuntu.png)
 (Screenshot: Status service Nginx dan konfigurasi IP Ubuntu Server)
 
-### E. Konfigurasi Client (Tinycore Linux)
+### E. Konfi<img width="1401" height="776" alt="1" src="https://github.com/user-attachments/assets/82e711b0-7728-4459-bd54-847c5a59b26e" />
+gurasi Client (Tinycore Linux)
 Akses *Control Panel > Network* pada masing-masing VM Tinycore dan atur sesuai tabel IP.
 * *LAN Client:* IP 192.168.10.10, Mask 255.255.255.0, Gateway 192.168.10.1, DNS 8.8.8.8
 * *WAN Client:* IP 172.16.100.10, Mask 255.255.255.0, Gateway 172.16.100.1, DNS 8.8.8.8
@@ -145,36 +146,46 @@ Akses *Control Panel > Network* pada masing-masing VM Tinycore dan atur sesuai t
 ## 4. Hasil Pengujian
 
 1. *Pengujian Client LAN ke Gateway Cisco* (Ping ke 192.168.10.1)
-   ![Pengujian 1](images/pengujian_1_lan_cisco.png)
+   ![Pengujian 1]<img width="1401" height="776" alt="1" src="https://github.com/user-attachments/assets/fbb8ed57-1150-4c6f-a06f-00c31c2570f2" />
+
 
 2. *Pengujian Client LAN ke FortiGate* (Ping ke 10.20.20.1)
-   ![Pengujian 2](images/pengujian_2_lan_fortigate.png)
+   ![Pengujian 2]<img width="1600" height="908" alt="2" src="https://github.com/user-attachments/assets/4a775f62-a886-43e3-b82f-929f731fd622" />
+
 
 3. *Pengujian Client LAN ke DMZ* (Ping ke 192.168.20.10)
-   ![Pengujian 3](images/pengujian_3_lan_dmz.png)
+   ![Pengujian 3]<img width="1600" height="909" alt="3" src="https://github.com/user-attachments/assets/8cdf5aba-73cb-451f-a0f5-27a9f10a6b11" />
+
 
 4. *Pengujian Client LAN Akses Web DMZ* (Akses browser ke http://192.168.20.10)
-   ![Pengujian 4](images/pengujian_4_lan_webdmz.png)
+   ![Pengujian 4]<img width="1600" height="911" alt="4" src="https://github.com/user-attachments/assets/649595cb-b975-4acc-82f9-582b97af3afc" />
+
 
 5. *Pengujian Client WAN ke ISP MikroTik* (Ping ke 172.16.100.1)
-   ![Pengujian 5](images/pengujian_5_wan_mikrotik.png)
+   ![Pengujian 5]<img width="1600" height="908" alt="5" src="https://github.com/user-attachments/assets/4a1579f0-7d44-4795-b1e3-f9898c362ddd" />
+
 
 6. *Pengujian Client WAN ke FortiGate* (Ping ke 10.10.10.2)
-   ![Pengujian 6](images/pengujian_6_wan_fortigate.png)
+   ![Pengujian 6]<img width="1600" height="908" alt="6" src="https://github.com/user-attachments/assets/c7396b7c-06da-488a-8bf0-691da4b2fedb" />
+
 
 7. *Pengujian Client WAN Akses HTTP VIP* (Akses browser ke http://10.10.10.2)
-   ![Pengujian 7](images/pengujian_7_wan_webdmz.png)
+   ![Pengujian 7]<img width="1600" height="910" alt="7" src="https://github.com/user-attachments/assets/92194301-3504-4b75-9069-0d36a34baa8a" />
+
 
 8. *Pengujian Client WAN Ping Client LAN* (Ping ke 192.168.10.10)
-   ![Pengujian 8](images/pengujian_8_wan_lan_drop.png)
+   ![Pengujian 8]<img width="1600" height="905" alt="8" src="https://github.com/user-attachments/assets/c990fdad-02a9-4c66-b1e2-a29c7a61f162" />
+
    (Keterangan: Hasil Request Timed Out (RTO) / Drop sesuai konfigurasi keamanan)
 
 9. *Pengujian Client WAN Ping IP Asli DMZ* (Ping ke 192.168.20.10)
-   ![Pengujian 9](images/pengujian_9_wan_aslidmz_drop.png)
+   ![Pengujian 9]<img width="1600" height="905" alt="9" src="https://github.com/user-attachments/assets/909c017a-7fb3-4665-8a90-8f6385023224" />
+
    (Keterangan: Hasil Request Timed Out (RTO) / Drop)
 
 10. *Pengujian Server DMZ Ping LAN* (Ping ke 192.168.10.10)
-    ![Pengujian 10](images/pengujian_10_dmz_lan.png)
+    ![Pengujian 10]<img width="1600" height="908" alt="10" src="https://github.com/user-attachments/assets/6f1e0835-cff2-40da-9ed0-25bd0ca821d2" />
+
     (Keterangan: Hasil sesuai dengan policy firewall yang diterapkan)
 
 ---
