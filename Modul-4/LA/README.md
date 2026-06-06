@@ -54,6 +54,7 @@ Berikut adalah pemetaan IP Address untuk setiap antarmuka (interface) perangkat 
 <img width="980" height="604" alt="Dokumentasi Miktrotik IP" src="https://github.com/user-attachments/assets/13c3f1cf-22dc-495f-80f4-0efda76866fb" />
 <img width="983" height="597" alt="Dokumentasi Miktrotik NAT" src="https://github.com/user-attachments/assets/55143cfe-9eb4-48ea-9f12-6b74dde03497" />
 <img width="976" height="604" alt="Dokumentasi Fortinet IP" src="https://github.com/user-attachments/assets/2f770821-db43-46ba-b1e9-80fb2dc7258b" />
+
 ### B. Konfigurasi FortiGate
 *1. Setup IP Address Interface*
 ```bash
@@ -130,7 +131,7 @@ sudo systemctl enable nginx
 sudo systemctl restart nginx
 ```
 <img width="978" height="599" alt="Dokumentasi Ubuntu IP   nginx DMZ" src="https://github.com/user-attachments/assets/60431246-255e-48fc-b2e7-2311f3889203" />
----
+
 
 ## 4. Hasil Pengujian
 
