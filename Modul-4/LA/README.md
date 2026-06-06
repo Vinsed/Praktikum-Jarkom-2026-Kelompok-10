@@ -3,7 +3,7 @@ Berikut adalah laporan akhir pada modul 4 Firewall and NET
 # Topologi
 Topologi jaringan pada praktikum ini mengimplementasikan segmentasi jaringan yang memisahkan antara jaringan internal (LAN), zona demiliterisasi (DMZ), dan jaringan eksternal (WAN/Internet). 
 
-![Topologi Jaringan Kelompok](images/topologi_kelompok.png)
+![Topologi Jaringan Kelompok](/Topologi TUMOD 4.png)
 (Catatan: Ganti tautan gambar di atas dengan screenshot topologi jaringan dari workspace PNETLab kelompok Anda)
 
 *Keterangan Segmentasi:*
@@ -52,7 +52,9 @@ bash
 /ip route add dst-address=192.168.20.0/24 gateway=10.10.10.2
 
 
-![Konfigurasi MikroTik](images/konfigurasi_mikrotik.png)
+![Konfigurasi MikroTik](/Dokumentasi Mikrotik IP.jpeg)
+![Konfigurasi MikroTik](/Dokumentasi Mikrotik NAT.jpeg)
+![Konfigurasi MikroTik](/Dokumentasi Mikrotik IP.jpeg)
 (Screenshot: Konfigurasi IP, Route, dan NAT pada MikroTik)
 
 ### B. Konfigurasi FortiGate
@@ -95,7 +97,10 @@ Konfigurasi ini disarankan menggunakan GUI FortiGate:
 * *Policy LAN_to_DMZ:* Source LAN, Destination DMZ, Action ACCEPT, NAT OFF.
 * *Policy WAN_to_DMZ_HTTP:* Source WAN, Destination VIP_DMZ, Action ACCEPT, NAT OFF.
 
-![Konfigurasi FortiGate](images/konfigurasi_fortigate.png)
+![Konfigurasi FortiGate](/Dokumentasi Fortinet IP.jpeg)
+![Konfigurasi FortiGate](/Dokumentasi Fortinet Routing.jpeg)
+![Konfigurasi FortiGate](/Dokumentasi Fortinet Policy 1.jpeg)
+![Konfigurasi FortiGate](/Dokumentasi Fortinet Policy 2.jpeg)
 (Screenshot: Konfigurasi antarmuka, tabel routing, dan Firewall Policy FortiGate)
 
 ### C. Konfigurasi Cisco Router
@@ -115,7 +120,7 @@ ip route 0.0.0.0 0.0.0.0 10.20.20.1
 copy running-config startup-config
 
 
-![Konfigurasi Cisco](images/konfigurasi_cisco.png)
+![Konfigurasi Cisco](/Dokumentasi IP & Routing Cisco.jpeg)
 (Screenshot: Hasil perintah show ip interface brief dan show ip route pada Cisco)
 
 ### D. Konfigurasi Ubuntu Server DMZ
@@ -129,16 +134,8 @@ sudo systemctl enable nginx
 sudo systemctl restart nginx
 
 
-![Konfigurasi Ubuntu](images/konfigurasi_ubuntu.png)
+![Konfigurasi Ubuntu](/Dokumentasi Ubuntu IP & nginx DMZ.jpeg)
 (Screenshot: Status service Nginx dan konfigurasi IP Ubuntu Server)
-
-### E. Konfigurasi Client (Tinycore Linux)
-Akses *Control Panel > Network* pada masing-masing VM Tinycore dan atur sesuai tabel IP.
-* *LAN Client:* IP 192.168.10.10, Mask 255.255.255.0, Gateway 192.168.10.1, DNS 8.8.8.8
-* *WAN Client:* IP 172.16.100.10, Mask 255.255.255.0, Gateway 172.16.100.1, DNS 8.8.8.8
-
-![Konfigurasi Tinycore](images/konfigurasi_tinycore.png)
-(Screenshot: Konfigurasi IP pada GUI Network Tinycore)
 
 ---
 ## 4. Hasil Pengujian
