@@ -3,7 +3,7 @@ Berikut adalah laporan akhir pada modul 4 Firewall and NET
 # Topologi
 Topologi jaringan pada praktikum ini mengimplementasikan segmentasi jaringan yang memisahkan antara jaringan internal (LAN), zona demiliterisasi (DMZ), dan jaringan eksternal (WAN/Internet). 
 
-![Topologi Jaringan Kelompok](/Topologi TUMOD 4.png)
+![Topologi Jaringan Kelompok](Topologi TUMOD 4.png)
 (Catatan: Ganti tautan gambar di atas dengan screenshot topologi jaringan dari workspace PNETLab kelompok Anda)
 
 *Keterangan Segmentasi:*
