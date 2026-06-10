@@ -110,7 +110,7 @@ Konfigurasi IP penghubung antar FortiGate dan DHCP Client mengarah ke Internet (
 ### 3.7. Cisco Switch & MikroTik Surabaya
 Pembuatan VLAN 30 dan 40 di Cisco Switch Surabaya (*trunk* mengarah ke MikroTik). Pada MikroTik Surabaya, dikonfigurasi IP Gateway, layanan DHCP Server lokal untuk VLAN 30, serta *default route* menuju FortiGate Surabaya (`10.10.200.1`).
 <img width="1254" height="1227" alt="WhatsApp Image 2026-06-10 at 10 44 26 PM (2)" src="https://github.com/user-attachments/assets/f817ff65-f551-4acb-8f16-84ddd34f7c1b" />
-
+<img width="1252" height="1239" alt="WhatsApp Image 2026-06-10 at 10 44 27 PM" src="https://github.com/user-attachments/assets/bce5fce5-88dc-4966-a544-ad17de8dd20a" />
 
 ### 3.8. FortiGate Surabaya
 Konfigurasi interface WAN mengarah ke MikroTik ISP dan interface LAN mengarah ke MikroTik Surabaya. Pembuatan kebijakan keamanan (*Firewall Policy*) dengan NAT untuk akses internet. Konfigurasi GRE Tunnel (`172.16.0.2`) menuju FortiGate Jakarta dan aktivasi *routing* OSPF *over* GRE.
